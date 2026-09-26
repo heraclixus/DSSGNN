@@ -1,0 +1,17 @@
+includes:
+  - base.yaml
+model:
+  model_name: GCN_DSSRes
+  dss_K_lp: 3
+  dss_K_hp: 2
+  dss_P: 1
+  quadrature_nodes: 2
+  warmup_base_epochs: 100
+  residual_scale_init: 0.05
+ood:
+  ood_alg: GroupDRO
+  ood_param: 0.001
+train:
+  max_epoch: 200
+  lr: 3e-3
+  mile_stones: [200]

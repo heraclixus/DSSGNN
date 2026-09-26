@@ -1,0 +1,23 @@
+includes:
+  - base.yaml
+model:
+  model_name: SAGE_DSSRes
+  dim_hidden: 96
+  model_layer: 3
+  dss_K_lp: 4
+  dss_K_hp: 3
+  dss_P: 2
+  quadrature_nodes: 6
+  warmup_base_epochs: 0
+  residual_scale_init: 0.03
+  use_random_gates: true
+  dss_P_gate: 1
+  shared_input_lift: true
+ood:
+  ood_alg: GroupDRO
+  ood_param: 0.001
+train:
+  max_epoch: 240
+  lr: 1e-3
+  weight_decay: 5e-4
+  mile_stones: [240]

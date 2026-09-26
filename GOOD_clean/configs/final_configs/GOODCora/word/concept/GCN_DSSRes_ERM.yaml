@@ -1,0 +1,23 @@
+includes:
+  - base.yaml
+model:
+  model_name: GCN_DSSRes
+  dim_hidden: 128
+  model_layer: 3
+  dss_K_lp: 5
+  dss_K_hp: 4
+  dss_P: 3
+  quadrature_nodes: 8
+  warmup_base_epochs: 25
+  residual_scale_init: 0.05
+  use_random_gates: true
+  dss_P_gate: 1
+  shared_input_lift: true
+ood:
+  ood_alg: ERM
+  ood_param: -1.
+train:
+  max_epoch: 200
+  lr: 1e-3
+  weight_decay: 5e-4
+  mile_stones: [200]

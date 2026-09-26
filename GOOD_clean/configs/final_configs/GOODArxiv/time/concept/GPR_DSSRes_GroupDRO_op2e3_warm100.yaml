@@ -1,0 +1,24 @@
+includes:
+  - base.yaml
+model:
+  model_name: GPR_DSSRes
+  dim_hidden: 160
+  model_layer: 3
+  dss_K_lp: 5
+  dss_K_hp: 4
+  dss_P: 2
+  quadrature_nodes: 8
+  warmup_base_epochs: 100
+  residual_scale_init: 0.04
+  use_random_gates: false
+  shared_input_lift: false
+  gpr_K: 16
+  gpr_alpha: 0.15
+ood:
+  ood_alg: GroupDRO
+  ood_param: 0.002
+train:
+  max_epoch: 300
+  lr: 7.5e-4
+  weight_decay: 7.5e-4
+  mile_stones: [300]
