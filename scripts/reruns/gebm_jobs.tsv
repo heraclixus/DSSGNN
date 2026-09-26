@@ -1,0 +1,11 @@
+gebm_cora_structure	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset cora --ood_type structure
+gebm_cora_feature	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset cora --ood_type feature
+gebm_cora_label	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset cora --ood_type label
+gebm_amazon-photo_structure	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset amazon-photo --ood_type structure
+gebm_amazon-photo_feature	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset amazon-photo --ood_type feature
+gebm_amazon-photo_label	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset amazon-photo --ood_type label
+gebm_coauthor-cs_structure	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset coauthor-cs --ood_type structure
+gebm_coauthor-cs_feature	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset coauthor-cs --ood_type feature
+gebm_coauthor-cs_label	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset coauthor-cs --ood_type label
+gebm_twitch	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset twitch --ood_type structure
+gebm_arxiv	python run_ood_gnnsafe.py --method graph_ebm --backbone gcn --mode detect --use_bn --runs 3 --epochs 200 --device 0 --dataset arxiv --ood_type structure

@@ -1,0 +1,33 @@
+cora_P1_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cora --P 1 --lambda_reg 0 --propagate_first --gf rw --pro_dropout 0.8
+cora_P1_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cora --P 1 --lambda_reg 0.001 --propagate_first --gf rw --pro_dropout 0.8
+cora_P1_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cora --P 1 --lambda_reg 0.01 --propagate_first --gf rw --pro_dropout 0.8
+cora_P1_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cora --P 1 --lambda_reg 0.1 --propagate_first --gf rw --pro_dropout 0.8
+citeseer_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset citeseer --P 2 --lambda_reg 0
+citeseer_P2_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset citeseer --P 2 --lambda_reg 0.001
+citeseer_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset citeseer --P 2 --lambda_reg 0.01
+citeseer_P2_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset citeseer --P 2 --lambda_reg 0.1
+texas_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0 --propagate_first --optimizer_prop RMSprop
+texas_P2_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.001 --propagate_first --optimizer_prop RMSprop
+texas_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.01 --propagate_first --optimizer_prop RMSprop
+texas_P2_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.1 --propagate_first --optimizer_prop RMSprop
+wisconsin_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0 --pro_dropout 0.6
+wisconsin_P2_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0.001 --pro_dropout 0.6
+wisconsin_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0.01 --pro_dropout 0.6
+wisconsin_P2_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0.1 --pro_dropout 0.6
+chameleon_P1_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset chameleon --P 1 --lambda_reg 0 --propagate_first --combine sum
+chameleon_P1_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset chameleon --P 1 --lambda_reg 0.001 --propagate_first --combine sum
+chameleon_P1_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset chameleon --P 1 --lambda_reg 0.01 --propagate_first --combine sum
+chameleon_P1_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset chameleon --P 1 --lambda_reg 0.1 --propagate_first --combine sum
+squirrel_P1_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset squirrel --P 1 --lambda_reg 0 --propagate_first --gf rw --optimizer_prop RMSprop
+squirrel_P1_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset squirrel --P 1 --lambda_reg 0.001 --propagate_first --gf rw --optimizer_prop RMSprop
+squirrel_P1_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset squirrel --P 1 --lambda_reg 0.01 --propagate_first --gf rw --optimizer_prop RMSprop
+squirrel_P1_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset squirrel --P 1 --lambda_reg 0.1 --propagate_first --gf rw --optimizer_prop RMSprop
+pubmed_P5_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset pubmed --P 5 --lambda_reg 0.01 --hidden 128
+cs_P1_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cs --P 1 --lambda_reg 0.01 --heterophily_tfe
+roman-empire_P6_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset roman-empire --P 6 --lambda_reg 0 --heterophily_tfe --layers_heterophilous 3
+amazon-ratings_P8_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset amazon-ratings --P 8 --lambda_reg 0.01 --propagate_first --hidden 128
+amazon-ratings-mapcfg_P8_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset amazon-ratings --P 8 --lambda_reg 0.01 --heterophily_tfe --layers_heterophilous 3
+minesweeper_P6_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset minesweeper --P 6 --lambda_reg 0.001 --lr 0.005
+tolokers_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset tolokers --P 2 --lambda_reg 0 --propagate_first --gf rw --optimizer_prop RMSprop
+tolokers_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset tolokers --P 2 --lambda_reg 0.01 --propagate_first --gf rw --optimizer_prop RMSprop
+questions_P4_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset questions --P 4 --lambda_reg 0.001 --propagate_first --optimizer_prop RMSprop
