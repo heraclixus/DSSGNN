@@ -1,0 +1,21 @@
+# Datasets (downloaded on first use; see README)
+/data/
+/data_pyg/
+/new_data2/*
+!/new_data2/splits/
+/GOOD_clean/storage/
+/GOOD/
+
+# Experiment outputs
+/results/
+/results_local/
+
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Renamed .git directories of the vendored upstream clones
+.git-local/
