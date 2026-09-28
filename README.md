@@ -118,7 +118,8 @@ sweeps, log parsers, and figure scripts are in `scripts/`; the
 `scripts/reruns/` job lists reproduce the per-dataset selection and
 Graph-EBM re-runs reported in the appendix (`make_selection_jobs.py` writes
 a TSV of commands, `launch_jobs.py` runs it on the given GPUs, and
-`parse_selection_logs.py` collects the results).
+`parse_selection_logs.py` collects the results; `make_cornell_jobs.py` writes
+the architecture grid and the sweeps of the Cornell row).
 
 ## Repository layout
 

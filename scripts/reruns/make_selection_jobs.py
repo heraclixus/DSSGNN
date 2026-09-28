@@ -22,7 +22,7 @@ CONFIGS = {
     "citeseer":       (2, ""),
     "pubmed":         (5, "--hidden 128"),
     "texas":          (2, "--propagate_first --optimizer_prop RMSprop"),
-    "cornell":        (8, "--heterophily_tfe --layers_heterophilous 3"),
+    "cornell":        (1, "--hidden 128 --pro_dropout 0.8"),
     "wisconsin":      (2, "--pro_dropout 0.6"),
     "chameleon":      (1, "--propagate_first --combine sum"),
     "squirrel":       (1, "--propagate_first --gf rw --optimizer_prop RMSprop"),

@@ -14,10 +14,10 @@ texas_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset te
 texas_P2_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.001 --propagate_first --optimizer_prop RMSprop
 texas_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.01 --propagate_first --optimizer_prop RMSprop
 texas_P2_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset texas --P 2 --lambda_reg 0.1 --propagate_first --optimizer_prop RMSprop
-cornell_P8_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 8 --lambda_reg 0 --heterophily_tfe --layers_heterophilous 3
-cornell_P8_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 8 --lambda_reg 0.001 --heterophily_tfe --layers_heterophilous 3
-cornell_P8_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 8 --lambda_reg 0.01 --heterophily_tfe --layers_heterophilous 3
-cornell_P8_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 8 --lambda_reg 0.1 --heterophily_tfe --layers_heterophilous 3
+cornell_P1_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 1 --lambda_reg 0 --hidden 128 --pro_dropout 0.8
+cornell_P1_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 1 --lambda_reg 0.001 --hidden 128 --pro_dropout 0.8
+cornell_P1_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 1 --lambda_reg 0.01 --hidden 128 --pro_dropout 0.8
+cornell_P1_lreg0.1	python dssgnn_training.py --runs 10 --device 0 --amp --dataset cornell --P 1 --lambda_reg 0.1 --hidden 128 --pro_dropout 0.8
 wisconsin_P2_lreg0	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0 --pro_dropout 0.6
 wisconsin_P2_lreg0.001	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0.001 --pro_dropout 0.6
 wisconsin_P2_lreg0.01	python dssgnn_training.py --runs 10 --device 0 --amp --dataset wisconsin --P 2 --lambda_reg 0.01 --pro_dropout 0.6

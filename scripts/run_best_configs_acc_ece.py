@@ -24,7 +24,7 @@ DSSGNN_BEST_CONFIG = {
     "citeseer": "P1",
     "pubmed": "hidden128",
     "texas": "prop_first_rmsprop",
-    "cornell": "heterophily_tfe_layers3",
+    "cornell": "cheb_hidden128_dropout08_P1",
     "wisconsin": "dropout06",
     "chameleon": "prop_first_sum",
     "squirrel": "prop_first_gfrw_rmsprop",
@@ -56,6 +56,7 @@ DSSGNN_CONFIG_ARGS = {
     "prop_first_gfrw_layers3": "--propagate_first --gf rw --layers_heterophilous 3",
     "heterophily_tfe_dropout06": "--heterophily_tfe --pro_dropout 0.6",
     "heterophily_tfe_layers3": "--heterophily_tfe --layers_heterophilous 3",
+    "cheb_hidden128_dropout08_P1": "--hidden 128 --pro_dropout 0.8 --P 1",
 }
 
 DATASETS = list(DSSGNN_BEST_CONFIG.keys())
