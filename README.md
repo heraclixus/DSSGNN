@@ -45,7 +45,9 @@ uv run pytest tests
 Dataset directories are not tracked. The fixed evaluation splits are
 included because they cannot be regenerated: `splits/` (geom-gcn style,
 per-split `.npz`), `new_data2/splits/` (LINKX style `.npy`), and
-`new_data/` (raw geom-gcn WebKB and Wikipedia graphs). To obtain the rest:
+`new_data/` (raw geom-gcn WebKB and Wikipedia graphs; the Cornell files are
+the corrected release of the geom-gcn repository, whose initial release
+duplicated the Texas features and labels). To obtain the rest:
 
 - `data/`, `data_pyg/`: created automatically. PyG (Planetoid, Amazon,
   Coauthor, Twitch, HeterophilousGraphDataset) and OGB (ogbn-arxiv) download
