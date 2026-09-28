@@ -26,7 +26,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm, Normalize
 
-plt.rcParams.update({
+plt.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42,
     "font.size": 9, "font.family": "serif",
     "axes.labelsize": 10, "axes.titlesize": 11,
     "legend.fontsize": 8, "figure.dpi": 150,
@@ -105,7 +105,7 @@ def main():
     mid_mask = (corr > q25) & (corr <= q75)
     high_mask = corr > q75
 
-    categories = ['Low $c_i$\n(Q1)', 'Mid $c_i$\n(Q2--Q3)',
+    categories = ['Low $c_i$\n(Q1)', 'Mid $c_i$\n(Q2\u2013Q3)',
                   'High $c_i$\n(Q4)']
     accs = [correct[low_mask].mean(), correct[mid_mask].mean(),
             correct[high_mask].mean()]
@@ -125,7 +125,7 @@ def main():
     ax.set_xticklabels(categories, fontsize=9)
     ax.set_ylabel('Accuracy (%)', color='#2171b5', fontsize=11, fontweight='bold')
     ax2.set_ylabel('Brier Score', color='#cb181d', fontsize=11, fontweight='bold')
-    ax.set_title('(b) Correction targets hard nodes',
+    ax.set_title('(b) Correction is largest on hard nodes',
                  fontsize=11, fontweight='bold', pad=18)
     ax.tick_params(axis='both', labelsize=10)
     ax2.tick_params(axis='y', labelsize=10)
